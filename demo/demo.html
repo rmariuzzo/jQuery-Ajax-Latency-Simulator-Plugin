@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="../src/jquery.ajax.latency.simulator.js"></script>
+        <script type="text/javascript">
+            jQuery(function($) {
+                $.fn.ajaxLatencySimulator({delay:5000});
+                $('button').click(function() {
+                    $.getJSON('data.json', function(data) {
+                        alert(data);
+                        });
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>demo</h1>
+        <button>click to load pencils</button> <small>delayed by 5 seconds</small>
+    </body>
+</htm>
