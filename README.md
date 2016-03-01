@@ -40,8 +40,8 @@ $.fn.ajaxLatencySimulator({delay : 3500});
 ```
 
 ```js
-    // I would like a variable latency from 2 seconds to 6 seconds.
-    $.fn.ajaxLatencySimulator({min : 2000, max : 6000});
+// I would like a variable latency from 2 seconds to 6 seconds.
+$.fn.ajaxLatencySimulator({min : 2000, max : 6000});
 ```
     
 And that's all.
